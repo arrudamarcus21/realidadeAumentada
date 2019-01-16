@@ -31,17 +31,6 @@ html,body {
 
 <script>
 	
-var cameraParam = new ARCameraParam();
-cameraParam.onload = function() {
-	arController = new ARController(320, 240, cameraParam);
-	arController._initNFT();
-	arController.debugSetup();
-	arController.loadNFTMarker('DataNFT/pinball', function(markerId) { 
-		console.log('Created NFT marker', arguments);
-	});
-};
-cameraParam.load('Data/camera_para.dat');
-	
 window.ARThreeOnLoad = function() {
 
 	ARController.getUserMediaThreeScene({maxARVideoSize: 320, cameraParam: 'data/camera_para.dat', 
