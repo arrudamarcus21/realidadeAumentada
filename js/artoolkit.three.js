@@ -191,10 +191,10 @@
 		};
 
 		
-			Creates a Three.js marker Object3D for the given NFT marker UID.
-			The marker Object3D tracks the NFT marker when it's detected in the video.
+// 			Creates a Three.js marker Object3D for the given NFT marker UID.
+// 			The marker Object3D tracks the NFT marker when it's detected in the video.
 
-			Use this after a successful artoolkit.loadNFTMarker call:
+// 			Use this after a successful artoolkit.loadNFTMarker call:
 
 			arController.loadNFTMarker('DataNFT/pinball', function(markerUID) {
 				var markerRoot = arController.createThreeNFTMarker(markerUID);
